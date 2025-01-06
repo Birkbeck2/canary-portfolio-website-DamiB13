@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+   <!-- Document Setup (Meta Information) -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="DT Designs Portfolio">
+  <meta name="keywords" content="HTML, CSS, Portfolio">
+  <meta name="author" content="Damilola Babajide">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>DT Designs - Design Request Form</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="design-form-styles.css">
+
+  <!-- Fonts (Google Fonts and Online Fonts) -->
+  <link href="https://db.onlinewebfonts.com/c/063b1ecb77f04e4643e50307b2c53d9a?family=Clash+Display+Semibold" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/bb8d6c1363f02b8af73744aa5fc43627?family=Clash+Display+Medium" rel="stylesheet">
+  <link href="https://api.fontshare.com/css?f%5B%5D=clash-display@400,700&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+       
+  <!-- Navigation < Responsive navigation with logo and menu items) -->
+  <nav class="nav">
+    <ul class="nav-flex">
+      <li><img src="images/DT-Designs-Logo.png" alt="DT Designs Logo" width="70"></li>
+      <li> <a href="index.html" class="active">Home</a></li> 
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="design-form.html">Design Request Form</a></li>
+      <!-- Button element with:
+        - class="nav-button" for styling
+        - onclick event that redirects to get-in-touch.html when clicked
+        - Text inside button reads "GET IN TOUCH" -->
+      <li><button class="nav-button" onclick="window.location.href='get-in-touch.html'">GET IN TOUCH</button>
+      </li>
+    </ul>
+  </nav>
+
+    <!-- Hero Section (Main header and Subheader) -->
+    <h1>Design Request Form</h1>
+
+    <h2>Let's Create Your New Brand</h2>
+    
+    <!-- Line and Page Break -->
+    <hr>
+    <br>
+
+    <!-- Introduction Text -->
+    <p>Thank you for your interest in collaborating with us! To ensure we’re the <i>perfect match</i> for your needs, please complete our inquiry form below. <br> 
+    <br> We encourage you to provide as much detail as possible so we can fully understand your requirements and deliver exactly what you’re looking for.<br>
+    <br> If you’re aiming to launch your brand within the <i>next 2–3 months</i>, we recommend starting the process with us right away! <br>
+    <br>Estimated time to complete: <i>5 minutes.</i></p> <br>
+    <hr>
+    <br>
+
+    <!-- Form Section (Form with input fields and submit button | Source https://www.w3schools.com/html/html_forms.asp) -->
+    <h3> Please fill in the following</h3>
+    <form>
+      <!-- Personal Information Fields -->
+      <div class="list">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name."><br>
+
+        <br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Your email"><br>
+        <br>
+        <label for="email">Your Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Your email"><br>
+        <br>
+        <!-- Business Information Fields -->
+        <label for="bname">What is your current/or upcoming business name?:</label><br>
+        <input type="text" id="bname" name="bname" placeholder="Your business"> <br>
+        <br>
+        <label for="insta">Your Instagram Handle:</label><br>
+        <input type="text" id="insta" name="insta" placeholder="Instagram handle"><br> 
+        <br>
+
+      <!-- Service checkboxes here -->
+      <!-- File format checkboxes here -->
+      <div class="services-section">
+        <fieldset>
+            <legend>What services would you like to work on?</legend>
+            
+            <div class="service-option">
+                <input type="checkbox" id="service-logo" name="services[]" value="logo">
+                <label for="service-logo">Logo Design</label>
+            </div>
+    
+            <div class="service-option">
+                <input type="checkbox" id="service-website" name="services[]" value="website">
+                <label for="service-website">Website Design</label>
+            </div>
+    
+            <div class="service-option">
+                <input type="checkbox" id="service-business-card" name="services[]" value="business-card">
+                <label for="service-business-card">Business Card Design</label>
+            </div>
+    
+            <div class="service-option">
+                <input type="checkbox" id="service-flyer" name="services[]" value="flyer">
+                <label for="service-flyer">Flyer Design</label>
+            </div>
+    
+            <div class="service-option">
+                <input type="checkbox" id="service-banner" name="services[]" value="banner">
+                <label for="service-banner">Pull Up Banner Design</label>
+            </div>
+    
+            <div class="service-option">
+                <input type="checkbox" id="service-social" name="services[]" value="social">
+                <label for="service-social">Social Media Assets</label>
+            </div>
+    
+            <div class="service-option">
+                <input type="checkbox" id="service-menu" name="services[]" value="menu">
+                <label for="service-menu">Menu/Pricelist Design</label>
+            </div>
+    
+            <div class="service-option">
+                <input type="checkbox" id="service-other" name="services[]" value="other">
+                <label for="service-other">Other</label>
+            </div>
+        </fieldset>
+    </div>
+      <br>
+        <!-- Additional Information Fields -->
+        <div class="form-group">
+          <label for="vision-details">Please detail your vision:</label>
+          <textarea id="vision-details" name="vision-details" placeholder="Start writing"></textarea>
+        </div>
+
+      <br>
+
+      <!-- File Format Checkboxes -->
+      <div class="file-formats">
+        <fieldset>
+            <legend>File format(s) needed:</legend>
+            
+            <div class="format-option">
+                <input type="checkbox" id="format-png" name="formats[]" value="png">
+                <label for="format-png">PNG</label>
+            </div>
+    
+            <div class="format-option">
+                <input type="checkbox" id="format-jpeg" name="formats[]" value="jpeg">
+                <label for="format-jpeg">JPEG</label>
+            </div>
+    
+            <div class="format-option">
+                <input type="checkbox" id="format-pdf" name="formats[]" value="pdf">
+                <label for="format-pdf">PDF</label>
+            </div>
+    
+            <div class="format-option">
+                <input type="checkbox" id="format-email" name="formats[]" value="email">
+                <label for="format-email">Email Format (-200KB)</label>
+            </div>
+    
+            <div class="format-option">
+                <input type="checkbox" id="format-other" name="formats[]" value="other">
+                <label for="format-other">Other</label>
+            </div>
+        </fieldset>
+    </div>
+    
+      <br>
+
+        <!-- Additional Information Fields -->
+        <div class="form-group">
+          <label for="additional-info">Other information:</label>
+          <textarea id="additional-info" name="additional-info" placeholder="More information"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Let's work together">
+        <br>
+    </div>
+  </form>
+  <br>
+  <!-- Social Media Banner -->
+  <section class="social-banner">
+    <div class="grid-container">
+        <div class="banner">
+            <h4>Follow Me • Follow Me • Follow Me • Follow Me • Follow Me • Follow Me</h4>
+        </div>
+    </div>
+  </section>
+  
+   <!-- Social Media Links -->    
+  <section class="social-links">
+    <div class="container2">
+      <h5>
+        <a href="https://www.instagram.com/dtdesigns_/">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </h5>
+
+      <h5>
+        <a href="https://www.tiktok.com/@dtdesigns_">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+        </h5>
+    </div>
+  </section>
+  
+  <!-- Scroll to Top Arrow | Source: https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6 -->
+  <a href="#top" class="scroll-top"> ↑</a>
+
+  <!-- Footer (Footer with copyright) -->
+  <footer>
+    <p>Copyright &copy; 2024 Dami Toyosi</p>
+  </footer>
+  
+</body>
+</html>
