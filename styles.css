@@ -179,7 +179,7 @@ p {
 
 /* Image Components (Responsive image handling for optimal display across all devices | Maintains aspect ratio while filling available space */ 
 img {
-  max-width: 100%;
+  width: 100%;
   max-height: fit-content;
   display: grid;
 }
