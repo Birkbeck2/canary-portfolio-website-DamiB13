@@ -184,6 +184,11 @@ img {
   display: grid;
 }
 
+.hero-image{
+  width: 100%;
+  height: auto;
+}
+
 /* Services Section (Flexible layout system for displaying service offerings and designer profile)*/
 
 /* Decorative Star Element */  
