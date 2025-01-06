@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document Setup (Meta Information) -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="DT Designs Portfolio">
+  <meta name="keywords" content="HTML, CSS, Portfolio">
+  <meta name="author" content="Damilola Babajide">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>DT Designs Portfolio</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts (Google Fonts and Online Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/063b1ecb77f04e4643e50307b2c53d9a?family=Clash+Display+Semibold" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/bb8d6c1363f02b8af73744aa5fc43627?family=Clash+Display+Medium" rel="stylesheet">
+  <link href="https://api.fontshare.com/css?f%5B%5D=clash-display@400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation < Responsive navigation with logo and menu items) -->
+    <nav class="nav">
+      <ul class="nav-flex">
+        <li><img src="images/DT-Designs-Logo.png" alt="DT Designs Logo" width="70"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="design-form.html">Design Request Form</a></li>
+        <!-- Button element with:
+          - class="nav-button" for styling
+          - onclick event that redirects to get-in-touch.html when clicked
+          - Text inside button reads "GET IN TOUCH" -->
+        <li><button class="nav-button" onclick="window.location.href='get-in-touch.html'">GET IN TOUCH</button>
+        </li>
+      </ul>
+    </nav>
+    
+  <!-- Hero Section (Main header and Subheader) -->
+  <header>
+    <h1>Dami Toyosi</h1>
+    <h2> Creative Designer From London</h2>
+  </header>
+
+  <!-- Banner (Highlighting key services) -->
+  <section class="banner">
+      <h3>Branding • Print Design • Logo Design • Branding • Print Design • Logo Design </h3>
+  </section>
+  
+  <img src="images/Freds-coffee.png" alt="Fred's coffee cup"> <br> 
+
+  <!-- Statistics Section (Highlighting key achievements and experience) -->
+  <section>
+    <div class="stats"> 
+        <h5>Clients </h5> 
+        <h4 data-symbol="+">100</h4>
+        <hr>
+
+        <h5>Projects</h5> 
+        <h4 data-symbol="+">200</h4>
+        <hr>
+ 
+        <h5>Experience</h5> 
+        <h4 data-symbol="+">6 Years</h4>
+        <hr>
+ 
+        <h5>Happy Clients</h5> 
+        <h4 data-symbol="%">100</h4>
+        <hr>
+    </div>
+  </section>
+
+  <!-- Decorative Star Element (Uses Unicode character &#10022 - Four Pointed Star | Source: W3Schools character set library https://www.w3schools.com/charsets/tryit.asp?deci=10022)-->
+    <div class="four-star">
+      <span style='font-size:70px;'>&#10022;</span> 
+    </div>
+    <h6>Services</h6>
+
+    <!-- Services Cards (Detailed service offerings in flex layout | with four pointed star icon) -->
+    <div class="services">
+      <div class="border">
+        <span class="star"> 
+          <span style='font-size:70px;'>&#10022;</span>
+        </span>
+          <h5>Brand Design</h5>
+          <p> I create visually cohesive and impactful brand identities that reflect the essence of a business or organization. Through strategic use of typography, colour schemes, and visual elements, I aim to capture the brand's personality and values, ensuring a strong and memorable presence across various mediums, such as logos, stationery, and digital assets. </p>
+      </div>
+
+    <div class="border">
+      <span class="star"> 
+        <span style='font-size:70px;'>&#10022;</span>
+      </span>
+        <h5>Print Design</h5>
+        <p> I craft visually stunning and effective collateral materials that enhance the brand's message and engage the target audience. From brochures and flyers to posters and packaging, I combine compelling imagery, typography, and layout techniques to create visually appealing and informative print materials that leave a lasting impression. </p>
+      </div>
+
+    <div class="border">
+      <span class="star"> 
+        <span style='font-size:70px;'>&#10022;</span>
+      </span>
+        <h5>Social Media Design</h5>
+        <p> I offer bespoke social media design services to help businesses and organisations elevate their online presence. By combining strategic visuals, engaging layouts, and brand-aligned aesthetics, I create eye-catching posts, banners, and campaigns designed to resonate with your audience. Whether it’s for Instagram, Facebook, or LinkedIn, my designs are crafted to communicate your message effectively and ensure a cohesive, professional appearance across all platforms. </p>
+      </div>
+    </div>
+    <br>
+
+  <!-- Designer Profile Section (Personal introduction with image) -->
+  <div class="container">
+    <div class="dami-image">
+      <img src="images/DT-Designs.png" alt="Portrait of DT Designs">
+    </div>
+    <div class="name-designer">
+      <h5>Dami Toyosi</h5>
+      <div class="job-title">
+        <p>CREATIVE DESIGNER</p>
+      </div>
+    </div>
+  </div>
+      <br>
+
+  <!-- Selected Work (h2 subtitle) -->
+  <section class="selected">
+    <hr>
+    <h2>Selected Work • Selected Work • Selected Work • Selected Work</h2>
+  </section>
+
+  <!-- Portfolio Section (Showcase of selected work in responsive grid) -->
+  <section class="selected-work">
+    <div class="freds-coffee"> 
+      <img src="images/Freds-coffee.png" alt="Logo design">
+      <h5>Fred's Coffee</h5>
+      <p>LOGO DESIGN</p>
+    </div>
+
+    <div class="tbg"> 
+      <img src="images/Community-Awards-banner.png" alt="Pull up banner">
+      <h5>The Barnet Group</h5>
+      <p>PULL UP BANNER</p>
+    </div>
+
+    <div class="babs"> 
+      <img src="images/Babs-Beauty-sign.png" alt="Website design">
+      <h5>Babs Beauty</h5>
+      <p>LOGO DESIGN</p>
+    </div>
+  </section>
+
+<!-- Call to Action Section (Pink banner with grey flexbox and CTA button | Engaging section to encourage client contact) -->
+<section class="cta">
+  <div class="banner">
+    <h3>Let's Work Together • Let's Work Together • Let's Work Together • Let's Work Together • Let's Work Together</h3>
+  </div>
+  
+<!-- Decorative Star Element-->
+  <div class="grid-container2">
+    <span class="four-star">
+      <span style="font-size:70px;">&#10022;</span>
+    </span>
+
+    <!-- Design Form Link -->   
+    <h6>Let's Create Your Brand</h6>  
+    <div class="button">
+      <button onclick="window.location.href='design-form.html'">DESIGN REQUEST FORM</button>
+    </div>
+  </div>
+</section>
+
+<!-- Scroll to Top Arrow | Source: https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6 -->
+<a href="#top" class="scroll-top"> ↑</a>
+
+<!-- Footer (Footer with copyright) -->
+  <footer>
+    <p>Copyright &copy; 2024 Dami Toyosi</p>
+  </footer>
+
+</body>
+</html>
