@@ -184,9 +184,11 @@ img {
   display: grid;
 }
 
-.hero-image{
-  max-width: 100%;
-  max-height: fit-content;
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Services Section (Flexible layout system for displaying service offerings and designer profile)*/
