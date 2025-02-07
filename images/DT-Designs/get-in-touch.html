@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Document Setup (Meta Information) -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="DT Designs Portfolio">
+  <meta name="keywords" content="HTML, CSS, Portfolio">
+  <meta name="author" content="Damilola Babajide">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>DT Designs - Get In Touch </title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="get-in-touch-styles.css">
+
+  <!-- Fonts (Online Fonts) -->
+  <link href="https://db.onlinewebfonts.com/c/063b1ecb77f04e4643e50307b2c53d9a?family=Clash+Display+Semibold" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/bb8d6c1363f02b8af73744aa5fc43627?family=Clash+Display+Medium" rel="stylesheet">
+  <link href="https://api.fontshare.com/css?f%5B%5D=clash-display@400,700&display=swap" rel="stylesheet">
+
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navigation < Responsive navigation with logo and menu items) -->
+  <nav class="nav">
+    <ul class="nav-flex">
+      <li><img src="images/DT-Designs-Logo.png" alt="DT Designs Logo" width="70"></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="design-form.html">Design Request Form</a></li>
+      <!-- Button element with:
+        - class="nav-button" for styling
+        - onclick event that redirects to get-in-touch.html when clicked
+        - Text inside button reads "GET IN TOUCH" -->
+      <li><button class="nav-button" onclick="window.location.href='get-in-touch.html'">GET IN TOUCH</button>
+      </li>
+    </ul>
+  </nav>
+
+    <!-- Hero Section (Main header) -->
+    <h1>Get In Touch</h1>
+
+    <h2>Let's Chat</h2>
+    <!-- Line and Page Break -->
+    <hr>
+    <br>
+
+    <!-- Introduction Text -->
+    <p>If you have any questions, ideas, or inquiries, please feel free to reach out to me at any time. I'm more than happy to assist you, and I welcome any thoughts or feedback you may have. <br>
+    <br>Don't hesitate to get in touch – I'm here to help!  &#128513; </p>
+    <hr>
+    <br>
+    
+  <!-- Contact Form Section (Form with input fields and submit button -->
+  <section>
+    <h3> Please fill in the following</h3>
+    
+    <form action="action_page.php">
+      <label for="fname">Your Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name."><br>
+        <br>
+      <label for="lname">Your Email</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Your email"><br>
+        <br>
+      <label for="subject">Your Message</label>
+        <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+      <br>
+     <input type="submit" value="Submit">
+    </form>
+  </section>  
+
+  <!-- Designer Profile Section (Personal introduction with image) -->
+  <section class="designer-profile">
+    <div class="container">
+        <div class="dami-image">
+            <img src="images/DT-Designs.png" alt="Portrait of DT Designs">
+        </div>
+        <div class="name-designer">
+            <h3>Dami Toyosi</h3>
+            <p class="job-title">CREATIVE DESIGNER</p>
+        </div>
+    </div>
+</section>
+
+  <!-- Social Media Banner -->  
+  <section>
+    <div class="grid-container">
+      <div class="banner"> 
+        <h4>Follow Me • Follow Me • Follow Me • Follow Me • Follow Me • Follow Me </h4>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Social Media Links -->     
+    <div class="container2">
+      <h5>
+        <a href="https://www.instagram.com/dtdesigns_/">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </h5>
+
+      <h5>
+        <a href="https://www.tiktok.com/@dtdesigns_">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+      </h5>
+    </div>
+
+    <!-- Scroll to Top Arrow | Source: https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6 -->
+  <a href="#top" class="scroll-top"> ↑</a>
+
+  <!-- Footer (Footer with copyright) --> 
+  <footer>
+    <p>Copyright &copy; 2024 Dami Toyosi</p>
+  </footer>
+
+</body>
+</html>
+

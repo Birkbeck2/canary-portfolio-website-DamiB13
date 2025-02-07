@@ -1,0 +1,445 @@
+/* Brand Colours */
+:root {
+  --primary-color: #EB068C;
+  --secondary-color: #282828;
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #ececec;
+}
+  
+/* Base Layout (Keeps the whole body of the page to keep it within a 4% margin radius)*/
+body {
+  margin: 4%;
+  padding: 0;
+}
+
+/* Navigation (Main Navigation - Uses Clash Display font with flex layout)*/
+.nav ul {
+  font-family: "Clash Display Medium";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  list-style: none;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Navigation Links Styling (Base styles for navigation links) */
+.nav a {
+  text-decoration: none;
+  color: var(--black);
+  align-items: center;
+}
+
+/* Navigation Items Spacing (Individual list item padding and alignment) */
+ul li{
+  padding: 5px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+/* Interactive States (Hover effect for navigation links) */
+.nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Call-to-Action Button (Distinctive button styling within navigation) */
+.nav-button { 
+  font-family:"Clash Display Medium";
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  align-self:end;
+  letter-spacing: 1.5px;
+}
+
+/* Reset List Styles (Removes default list styling) */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+  
+/* Flexible Navigation Layout (Secondary navigation container with row layout) */
+.site-nav-flex {
+  margin: auto;
+  max-width: min-content;
+  display: flex;
+  flex-direction: row;
+}
+  
+.site-nav-flex a {
+  display: block;
+  padding: 16px;
+}
+
+.site-nav-flex a:hover{
+  color: var(--primary-color);
+} 
+
+/* Typography (Using Anton (Google Fonts) and Clash Display (Web Fonts)) */
+ 
+/* Primary Heading - Hero Text (Large, bold display text for main headlines) */   
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 160px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: -2%;
+}
+
+/* Section Heading (Used for major section headers) */
+h2 {
+  font-family: "Clash Display Semibold";
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  margin: 2%;
+  margin-bottom: 2%;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+/* Banner Text (white text for banner sections) */  
+h3 {
+  font-family: "Clash Display Medium";
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
+  word-spacing: 12px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+/* Feature Text (Stats Section Styling) */
+h4 {
+  font-family: "Clash Display Semibold";
+  font-size: 40px;
+  color:var(--black);
+  line-height: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  max-width: 100%;
+}
+
+/* Target the + and % specifically | Source W3school https://www.w3schools.com/cssref/func_attr.php*/
+h4::after {
+  content: attr(data-symbol);
+  color: var(--primary-color);
+}
+  
+/* Component Headers (Smaller text for supporting headers) */
+h5 {
+  font-family: "Clash Display Medium";
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+}
+  
+/* Large Section Markers (Used for major content divisions) */ 
+h6 {
+  font-family: "Clash Display Semibold";
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+}
+
+/* Global Paragraph Styling (Consistent text styling across service descriptions) */
+p {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+}
+
+/*Banner Components (Pink branded banner sections for key messaging and calls-to-action) */  
+.banner {
+  padding: 0.5%;
+  background-color: #EB068C;
+  max-width: 100%;
+  margin: 0;
+  word-spacing: 1.5px;
+  letter-spacing: 1.5px;
+}
+
+/* Image Components (Responsive image handling for optimal display across all devices | Maintains aspect ratio while filling available space */ 
+img {
+  max-width: 100%;
+  max-height: fit-content;
+  display: grid;
+}
+
+.hero-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Services Section (Flexible layout system for displaying service offerings and designer profile)*/
+
+/* Decorative Star Element */  
+.four-star {
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  margin-bottom: -20px;
+}   
+
+/* Main Services Container (Primary flex container for service items) */ 
+.services {
+  display: flex;
+  height: auto;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+/* Decorative Star Element */  
+.star {
+  color: var(--primary-color);
+  display: flex;
+  margin-bottom: -20px;
+}
+  
+/* Service Card Styling (Grey background cards for individual service items) */
+.border {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--light-gray)
+}
+
+/* Designer Profile Components Container (Multi-purpose flex container for profile layouts) */ 
+.dami-image {
+  width: 100px;
+  height: 100px;
+  display: flex;
+} 
+
+.container {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap; 
+  border-radius: 10px;
+  padding:10px;
+  gap:10px;
+}
+
+.name-designer {
+  font-family: "Clash Display Semibold";
+  letter-spacing: 1.5px;
+}
+
+.job-title {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+
+.selected{
+  font-size: 15px;
+}
+
+
+/* Portfolio Grid Container (Main flex container for portfolio items with consistent spacing) */   
+.selected-work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+  gap: 30px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 10px auto 10px auto;
+}
+
+/* Portfolio Item Cards (Individual project containers with flexible growth properties) */
+.freds-coffee,
+.tbg,
+.babs {
+  flex: 1 1 300px; 
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Portfolio Item Text (Consistent typography for project descriptions) */
+.freds-coffee p,
+.tbg p,
+.babs p {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  width: 100%; 
+}
+
+/* Call-to-Action  Container (Grey background container with balanced padding) */
+.grid-container2 {
+  display: grid;
+  padding: 50px;
+  padding-top: 10px;
+  background-color: var(--light-gray);
+  max-height: fit-content;
+}
+
+/* Interactive Button Styling (Bold, branded button design for high visibility) */
+button {
+  font-family:"Clash Display Medium";
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 10px;
+  cursor: pointer;
+  margin: auto;
+  letter-spacing: 1.5px;
+  border: none;
+}
+/* Button Container (Centers the Call-to-Action button within its container) */
+.button {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Styling for the scroll to top button */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+/* Hover effects for better user interaction */
+.scroll-top:hover {
+  opacity: 1;
+}
+
+/* Smooth scrolling behaviour for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main Footer Container (Creates a professional, dark-colored base for closing content) */
+footer {
+  padding:10px;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+/* Responsive Design System (Mobile-first approach with progressive enhancement | Breakpoints: Mobile (0-600px), Tablet (601-1023px), Desktop (1024px+)*/
+
+
+/* Mobile Resolution (0 - 600px) (Base styling for smallest screens) */
+@media screen and (min-width: 0) and (max-width: 600px) {
+  /* Core Elements */
+  body {
+    background-color: var(--white)
+  }
+  
+  /* Typography Scaling */
+  h1 { font-size: 50px; align-items: center; }
+  h2 { font-size: 20px; }
+  h4 { font-size: 30px; }
+  h6 { font-size: 30px; }
+  
+  /* Navigation Adjustments */
+  .nav-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .nav ul li {
+    display: block;
+    flex-wrap: wrap;
+  }
+  
+  /* Portfolio Layout */
+  .selected-work {
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+  }
+  
+  .freds-coffee,
+  .tbg,
+  .babs { 
+    width: 100%; 
+    min-height: 380px;  
+    margin-bottom: 20px
+  }
+}
+
+/* Tablet Resolution (601px - 1023px) (For medium-sized screens) */
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  /* Typography Scaling */
+  h1 { font-size: 80px; }
+  h2 { font-size: 25px; }
+
+  /* Layout Adjustments */ 
+  .services {
+    flex-direction: row;
+  } 
+
+  .selected-work {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.freds-coffee,
+.tbg,
+.babs {
+    flex: 1;
+    max-width: 33.333%;
+}
+
+.selected-work img {
+    width: 100%;
+    height: auto;
+}
+}
+
+/* Desktop Resolution (1024px+) (Enhanced layout for larger screens) */
+@media screen and (min-width: 1024px) {
+  /* Portfolio Refinements */
+  .selected-work {
+      gap: 40px;
+      padding: 30px;
+    }
+
+  /* Service Layout */
+  .services {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    }
+}
